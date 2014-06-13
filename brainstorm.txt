@@ -1,0 +1,27 @@
+Engine will look something like:
+
+Player(level, hp, mp, attack)
+Monster(level, hp, mp, attack)
+
+
+
+Player always decides action; monster only retaliates
+
+player.attack(monster) ?
+engine.resolve_attack(player, monster) ?
+
+"Effects" get shuttled back and forth
+eg. -5 HP, +1 curse, -all MP
+
+Player sends effect,
+  which gets applied to Monster,
+  Monster returns effect,
+  which gets applied to Player
+
+
+
+
+Monster can be attacked
+Takes attack information (effect)
+  Returns different effect
+
