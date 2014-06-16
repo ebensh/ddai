@@ -1,5 +1,8 @@
 #include "monster.h"
 
+#include <cmath>
+
+http://www.qcfdesign.com/wiki/DesktopDungeons/index.php?title=Alpha:Level
 int Monster::base_attack() const {
   return static_cast<int>(pow(level(), 2) / 2.0 + 5.0 * level() / 2);
 }

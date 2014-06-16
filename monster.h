@@ -1,13 +1,10 @@
 #ifndef _MONSTER_H_
 #define _MONSTER_H_
 
-#include <cmath>
-
 class Monster {
  public:
-  Monster(int level)
-    : level_(level) {
-  }
+  explicit Monster(int level)
+    : level_(level) { }
   virtual ~Monster() { } 
 
   int level() const { return level_; }
