@@ -16,19 +16,3 @@ void Player::add_xp(int xp) {
   if (xp_ >= 5) { level_ = 2; return; }
   return 1;
 }
-
-Required experience per level
-
-To reach level	Experience required	Total required
-1	 0	 0
-2	 5	 5
-3	 10	 
-4	 15	 
-5	 20	 
-6	 25	 
-7	 30	 
-8	 35	 
-
-
-
-}
